@@ -1,7 +1,8 @@
-package com.needcode.githubuserapp
+package com.needcode.githubuserapp.presenter.list.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.needcode.githubuserapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
