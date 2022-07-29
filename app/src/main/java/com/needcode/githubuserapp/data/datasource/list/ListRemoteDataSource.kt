@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class ListRemoteDataSource @Inject constructor(private val apiService: ApiServiceImpl) :
     ListDataSource.Remote {
-    override suspend fun getPagedList(page: Int, pageSize: Int): DataState<NewsListsModel?> {
+    override suspend fun getPagedList(page: Int, pageSize: Int): DataState<NewsListsModel?>? {
         val res = apiService.getPagedNews(page, pageSize)
         return if (res.isSuccessful) {
             DataState.Success(res.body())
