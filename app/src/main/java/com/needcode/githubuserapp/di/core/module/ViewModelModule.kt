@@ -1,6 +1,7 @@
 package com.needcode.githubuserapp.di.core.module
 
 import androidx.lifecycle.ViewModel
+import com.needcode.githubuserapp.di.key.ViewModelKey
 import com.needcode.githubuserapp.presenter.list.viewmodel.MainActivityViewModel
 import dagger.Binds
 import dagger.Module
