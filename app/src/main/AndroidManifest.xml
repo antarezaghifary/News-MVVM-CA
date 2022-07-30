@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.needcode.githubuserapp">
+    package="com.needcode.news_mvvm_ca">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.needcode.news_mvvm_ca.CleanApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -11,10 +14,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GithubUserApp"
+        android:theme="@style/Theme.News_mvvm_ca"
         tools:targetApi="31">
         <activity
-            android:name=".presenter.list.view.MainActivity"
+            android:name="com.needcode.news_mvvm_ca.presenter.list.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -7,11 +7,11 @@
 
         <variable
             name="data"
-            type="com.needcode.githubuserapp.data.model.NewsModel" />
+            type="com.needcode.news_mvvm_ca.data.model.NewsModel" />
 
         <variable
             name="action"
-            type="com.needcode.githubuserapp.presenter.list.adapter.MainRvAction" />
+            type="com.needcode.news_mvvm_ca.presenter.list.adapter.MainRvAction" />
     </data>
 
     <androidx.cardview.widget.CardView
